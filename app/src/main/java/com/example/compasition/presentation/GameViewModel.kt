@@ -1,3 +1,5 @@
+package com.example.compasition.presentation
+
 import android.app.Application
 import android.os.CountDownTimer
 import androidx.lifecycle.LiveData

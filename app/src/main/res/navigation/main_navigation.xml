@@ -24,17 +24,25 @@
     </fragment>
     <fragment
         android:id="@+id/gameFragment"
-        android:name="GameFragment"
-        android:label="GameFragment" >
+        android:name="com.example.compasition.presentation.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
         <action
             android:id="@+id/action_gameFragment_to_gameFinishedFragment"
             app:destination="@id/gameFinishedFragment"
             app:popUpTo="@id/gameFragment"
             app:popUpToInclusive="true" />
+        <argument
+            android:name="level"
+            app:argType="com.example.compasition.domain.entity.Level" />
     </fragment>
     <fragment
         android:id="@+id/gameFinishedFragment"
         android:name="com.example.compasition.presentation.GameFinishedFragment"
         android:label="fragment_game_finished"
-        tools:layout="@layout/fragment_game_finished" />
+        tools:layout="@layout/fragment_game_finished" >
+        <argument
+            android:name="gameResult"
+            app:argType="com.example.compasition.domain.entity.GameResult" />
+    </fragment>
 </navigation>

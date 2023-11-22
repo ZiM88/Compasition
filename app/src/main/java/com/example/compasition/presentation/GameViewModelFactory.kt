@@ -1,6 +1,5 @@
 package com.example.compasition.presentation
 
-import GameViewModel
 import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
