@@ -31,7 +31,7 @@ class WelcomeFragment : Fragment() {
     }
 
     private fun launchChooseLevelFragment() {
-      findNavController().navigate(R.id.action_welcomeFragment_to_chooseLevelFragment)
+        findNavController().navigate(R.id.action_welcomeFragment_to_chooseLevelFragment)
     }
 
     override fun onDestroyView() {
